@@ -13,7 +13,7 @@ function uranai(name1, name2){
       .replace(/[えけせてねへめれゑげぜでべぺ]/g, "4")
       .replace(/[おこそとのほもよろをごぞどぽぼ]/g, "5")
       .replace(/ん/g, "0")
-      .replace(/\D/, "") - 0;
+      .replace(/\D/g, "") - 0;
   }
   
   answer = convert(name1) + convert(name2);
