@@ -24,3 +24,19 @@ function uranai(name1, name2){
   
     return Math.floor(answer * 100);
 }
+
+if(window != null){
+  var
+  $result = document.getElementById("result"),
+  $name1  = document.getElementById("name1"),
+  $name2  = document.getElementById("name2"),
+  $form   = document.getElementById("form");
+
+  function uranaiInHTML(){
+    $result.innerHTML =
+      uranai($name1.value, $name2.value) + "% です。";
+    return false;
+  }
+
+  $form.onsubmit = uranaiInHTML;
+}
