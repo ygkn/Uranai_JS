@@ -4,7 +4,7 @@ function uranai(name1, name2){
     return name
       .replace(/.[ぁゃゎ]/g,"1")
       .replace(/.ぃ/g, "2")
-      .replace(/.[ぅゅっ]/g, "3")
+      .replace(/.[ぅゅ]/g, "3")
       .replace(/.ぇ/g, "4")
       .replace(/.[ぉょ]/g, "5")
       .replace(/[あかさたなはまやらわがざだばぱ]/g, "1")
