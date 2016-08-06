@@ -1,15 +1,19 @@
 <html>
   <head>
     <title>恋占い</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div>
-      <p>一時期流行った、電卓だけでできる恋占いをJavaScriptで組んでみました。</p>
-      <p>二人の名前を<b>ひらがなで</b>入力して、GO!ボタンを押してください。</p>
+    <div id="main">
+      <div id="description">
+        <p>一時期流行った、電卓だけでできる恋占いをJavaScriptで組んでみました。</p>
+        <p>二人の名前を<b>ひらがなで</b>入力して、GO!ボタンを押してください。</p>
+      </div>
       
       <form id="form">
-        <input id="name1" type="text" placeholder="一人目の名前を入力してください">
-        <input id="name2" type="text" placeholder="二人目の名前を入力してください">
+        <input id="name1" type="text" placeholder="一人目の名前を入力してください" autocomplete="no">
+        <input id="name2" type="text" placeholder="二人目の名前を入力してください" autocomplete="no">
         <button>GO!</button>
       </form>
       <p>二人の相性は<span id="result">???</span></p>
